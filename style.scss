@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: "Staatliches", sans-serif;
+  src: url(C:\Users\petar\Desktop\my-projects\Staatliches);
+  font-size: 1.2em;
+  line-height: 1.6;
+  background: #22262a;
+  overflow-x: hidden;
+}
+
+.nav-item .nav-link {
+  color: white !important;
+
+  &:hover {
+    color: #94a4b4 !important;
+
+  }
+}
+
+.container-fluid {
+  h1 {
+    color: white;
+    padding-top: 200px;
+  }
+
+  p {
+    color: #94a4b4;
+  }
+}
+
+
+#projects {
+  padding-top: 100px;
+}
+
+
+button {
+  background-color: transparent;
+  border-color: #222;
+  text-align: center;
+
+  a {
+    color: white;
+
+    &:hover {
+      color: #94a4b4;
+    }
+  }
+}
+
+#social {
+  position: fixed;
+  width: 60px;
+  margin-top: auto;
+  transition: all 0.3s linear;
+  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, .4);
+
+  ul {
+    margin-top: 0;
+    margin-bottom: 0rem
+  }
+
+  li {
+    height: 45px;
+    position: relative
+  }
+
+  li a {
+    color: #fff !important;
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 45px;
+    padding-left: 25%;
+    border-bottom: 1px solid rgba(0, 0, 0, .4);
+    transition: all .3s linear;
+    text-decoration: none !important
+  }
+
+  li:nth-child(1) a {
+    background: #2867B2
+  }
+
+  li:nth-child(2) a {
+    background: #333
+  }
+
+  li a i {
+    position: absolute;
+    top: 14px;
+    left: 24px;
+    font-size: 15px
+  }
+
+  ul li a span {
+    display: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: absolute
+  }
+
+  a:hover {
+    z-index: 1;
+    width: 200px;
+    border-bottom: 1px solid rgba(0, 0, 0, .5);
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, .3)
+  }
+
+  ul li:hover a span {
+    padding-left: 30%;
+    display: inline-block;
+    font-size: 15px
+  }
+}
+
+.footer {
+  display: block;
+  position: absolute;
+  bottom: -7.5rem;
+  left: 0;
+  width: 100%;
+  padding: 3.5rem;
+  background: #171a1d;
+  color: #94a4b4;
+  font-size: 1.6rem;
+  text-align: center;
+  font-family: Inconsolata, sans-serif;
+  border-top: 1px solid #343a41;
+  user-select: text;
+}
+
+.footer_item {
+  display: inline-block;
+}
+
+.footer_contact {
+  display: inline-block;
+  font-size: 15px;
+}
+
+.footer_link:link,
+.footer_link:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+h1 {
+  color: white;
+  padding: 20px
+}
+
+
+@import "card";

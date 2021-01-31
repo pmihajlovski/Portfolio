@@ -1,0 +1,50 @@
+
+.box{
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    padding: 20px;
+}
+.box:hover{ box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); }
+.box img{
+    width: 100%;
+    height: auto;
+    transition: all 0.3s ease;
+}
+.box:hover img{
+    opacity: 0.6;
+    filter: grayscale(100%);
+}
+.box .box-content{
+    color: #fff;
+    background: linear-gradient(to right, transparent,transparent,rgba(34,47,61,0.9),#222f3d,#222f3d);
+    text-align: right;
+    width: 100%;
+    padding: 15px 15px 15px 60px;
+    transform: translateY(-50%) scaleY(0);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+}
+.box:hover .box-content{ transform: translateY(-50%) scaleY(1); }
+.box .title{
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0 0 4px;
+}
+.box-content a{
+    color: white;
+    font-size: 15px;
+    font-style: italic;
+    text-transform: capitalize;
+    margin: 0 0 5px;
+    display: block;
+    &:hover {
+        color:  #94a4b4;
+    }
+}
